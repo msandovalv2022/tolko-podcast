@@ -1,144 +1,65 @@
 .toolbar {
+  color: $white;
   position: fixed;
   width: 100%;
   z-index: 99;
   display: flex;
   justify-content: space-between;
+  padding: 50px 100px 50px 100px;
+  align-items: center;
   &__logo {
-    margin-top: 10px;
-    margin-left: 130px;
     img {
-      height: 70px;
+      height: 60px;
+    }
+  }
+  &__social {
+    display: flex;
+    a {
+      margin-right: 20px;
+      img {
+        height: 40px;
+      }
     }
   }
   &__burger {
-    &--burger {
-      padding: 20px;
-      display: flex;
-      background-color: red;
-      align-items: center;
-      justify-content: left;
-      width: 400px;
-      cursor: pointer;
-      p {
-        margin-right: 20px;
-        margin-left: 20px;
-        font-size: 25px;
-      }
-    }
-    &--changeOptions {
-      margin-top: 20px;
-      display: flex;
-      align-items: center;
-      img {
-        margin-right: 30px;
-        cursor: pointer;
-      }
-      select {
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid black;
-        padding-bottom: 7px;
-        width: 100px;
-        font-size: 20px;
-
-        cursor: pointer;
-      }
-    }
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  .toolbar {
-    &__logo {
-      margin-left: 100px;
-      img {
-        height: 60px;
-      }
-    }
-    &__burger {
-      &--burger {
-        justify-content: center;
-        width: 300px;
-        img {
-          // height: 30px;
-        }
-        p {
-          display: none;
-        }
-      }
-      &--changeOptions {
-        display: none;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 668px) {
-  .toolbar {
-    &__logo {
-      margin-left: 50px;
-      img {
+}
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 480px) {
+  .toolbar{
+    padding: 50px;
+    &__logo{
+      img{
         height: 50px;
       }
     }
-    &__burger {
-      width: 300px;
-    }
-  }
-}
-@media screen and (max-width: 576px) {
-  .toolbar {
-    &__burger {
-      &--burger {
-        img {
-          width: 35px;
+    &__social{
+      a{
+        margin-right: 10px;
+        img{
+          height: 30px;
         }
       }
     }
   }
 }
-@media screen and (max-width: 480px) {
-  .toolbar {
-    &__burger {
-      translate: 50px 0;
-      &--burger {
-        width: 250px;
-      }
-    }
+@media screen and (max-width: 380px) {
+  .toolbar{
+    padding: 30px;
   }
 }
-@media screen and (max-width: 380px) {
-  .toolbar {
-    &__burger {
-      translate: 100px 0px;
-      &--burger {
-        width: 200px;
-      }
-    }
-    &__logo {
-      margin-top: 5px;
-      margin-left: 20px;
-      img {
-        height: 55px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 380px) {
-  .toolbar {
-    &__burger {
-      translate: 110px 0px;
-      &--burger {
-        width: 150px;
-        img {
-          height: 20px;
-        }
-      }
-    }
-    &__logo {
-      width: 55px;
-      img {
-        height: 45px;
+@media screen and (max-width: 320px) {
+  .toolbar{
+    &__logo{
+      img{
+        height: 40px;
       }
     }
   }

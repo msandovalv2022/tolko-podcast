@@ -1,0 +1,25 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../img/fullBanner.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment: fixed;
+    &__animation{
+        img{
+            height: 150px;
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 1280px){
+    .header{
+        background-position: top center;
+    }
+}
+@media screen and (max-width: 768px){
+    .header{
+        background-position: center 5%;
+    }
+}
