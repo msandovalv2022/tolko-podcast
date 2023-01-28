@@ -1,11 +1,11 @@
 .toolbar {
-  color: $white;
+  background-color: $white;
   position: fixed;
   width: 100%;
   z-index: 99;
   display: flex;
   justify-content: space-between;
-  padding: 50px 100px 50px 100px;
+  padding: 10px 100px 10px 100px;
   align-items: center;
   &__logo {
     img {
