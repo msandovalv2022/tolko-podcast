@@ -2,6 +2,7 @@
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import { ImgCard, VidCard, LittleCard } from "./components/Cards";
+import Footer from "./components/Footer";
 
 //Img
 import September from "./assets/img/september.png";
@@ -13,6 +14,8 @@ function App() {
     <div className="App">
       <Nav />
       <Header />
+      {/* <div className="spaceSection"></div> */}
+
       <section className="notes cornerSpace">
         <div className="notes__info">
           <div className="notes__info--one">
@@ -54,14 +57,50 @@ function App() {
 
       <div className="spaceSection"></div>
       <section className="extraNews cornerSpace">
-        <LittleCard imgSrc={PrSquared} imgAlt="noAlt" cardTitle="Lorem ipsum dolot" cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"  titleClass="" textClass="" bgColor="#29ABE2"/>
-        
-        <LittleCard imgSrc={PrSquared} imgAlt="noAlt" cardTitle="Lorem ipsum dolot" cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"  titleClass="" textClass="" bgColor="#101820" />
+        <LittleCard
+          imgSrc={PrSquared}
+          imgAlt="noAlt"
+          cardTitle="Lorem ipsum dolot"
+          cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          titleClass=""
+          textClass=""
+          bgColor="#29ABE2"
+        />
 
-        <LittleCard imgSrc={PrSquared} imgAlt="noAlt" cardTitle="Lorem ipsum dolot" cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"  titleClass="" textClass="" bgColor="#101820" />
-        
-        <LittleCard imgSrc={PrSquared} imgAlt="noAlt" cardTitle="Lorem ipsum dolot" cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"  titleClass="" textClass="" bgColor="#29ABE2" />
+        <LittleCard
+          imgSrc={PrSquared}
+          imgAlt="noAlt"
+          cardTitle="Lorem ipsum dolot"
+          cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          titleClass=""
+          textClass=""
+          bgColor="#101820"
+        />
+
+        <LittleCard
+          imgSrc={PrSquared}
+          imgAlt="noAlt"
+          cardTitle="Lorem ipsum dolot"
+          cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          titleClass=""
+          textClass=""
+          bgColor="#101820"
+        />
+
+        <LittleCard
+          imgSrc={PrSquared}
+          imgAlt="noAlt"
+          cardTitle="Lorem ipsum dolot"
+          cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          titleClass=""
+          textClass=""
+          bgColor="#29ABE2"
+        />
       </section>
+
+      <div className="spaceSection"></div>
+
+      <Footer />
     </div>
   );
 }

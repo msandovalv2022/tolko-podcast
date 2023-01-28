@@ -5,6 +5,11 @@
 .spaceSection {
   margin-bottom: 80px;
 }
+@media screen and (max-width: 1024px){
+  .spaceSection{
+    margin-bottom: 50px;
+  }
+}
 @media screen and (max-width: 668px) {
   .cornerSpace {
     padding: 0 70px 0 70px;
