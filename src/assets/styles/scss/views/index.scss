@@ -1,0 +1,132 @@
+.notes {
+  display: flex;
+  justify-content: center;
+  &__info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 50px;
+    &--one {
+      margin-right: 50px;
+    }
+  }
+  &__videos {
+    width: 50%;
+    translate: 0 -30px;
+    &--rectangle {
+      width: 100%;
+      height: 100px;
+      background-color: $blue;
+      border-radius: 20px;
+    }
+    &--videos {
+      margin-top: 135px;
+      display: flex;
+      justify-content: center;
+      &One {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .notes {
+    &__videos {
+        translate: 0 25px;
+      &--videos {
+        margin-top: 82px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .notes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__info {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    &__videos {
+      width: 100%;
+      translate: 0 -30px;
+      &--videos {
+        margin-top: 50px;
+        &One {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .notes {
+    &__info {
+      margin-right: 0px;
+    }
+    &__videos {
+      &--rectangle {
+        margin-top: 50px;
+        height: 70px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .notes {
+    &__videos {
+      translate: 0 -5px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .notes {
+    &__info {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &--one {
+        margin-right: 0px;
+      }
+      &--two{
+        translate: 0 -80px
+      }
+    }
+    &__videos {
+      translate: 0 -170px;
+      &--videos {
+        flex-direction: column;
+        &One {
+          margin-right: 0px;
+        }
+        &Two{
+            translate: 0 -100px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px){
+    .notes{
+        &__info{
+            &--two{
+                translate: 0 10px;
+            }
+        }
+        &__videos{
+            translate: 0 -30px;
+            &--rectangle{
+                height: 50px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
