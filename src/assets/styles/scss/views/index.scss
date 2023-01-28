@@ -14,7 +14,7 @@
   }
   &__videos {
     width: 50%;
-    translate: 0 -30px;
+    translate: 0 30px;
     &--rectangle {
       width: 100%;
       height: 100px;
@@ -22,7 +22,7 @@
       border-radius: 20px;
     }
     &--videos {
-      margin-top: 135px;
+      margin-top: 110px;
       display: flex;
       justify-content: center;
       &One {
@@ -37,7 +37,7 @@
     &__videos {
         translate: 0 25px;
       &--videos {
-        margin-top: 82px;
+        margin-top: 55px;
       }
     }
   }
