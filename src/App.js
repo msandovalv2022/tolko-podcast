@@ -1,13 +1,15 @@
 //Components
 import Nav from "./components/Nav";
 import Header from "./components/Header";
-import { ImgCard, VidCard, LittleCard } from "./components/Cards";
+import { Article, ImgCard, VidCard } from "./components/Cards";
 import Footer from "./components/Footer";
 
 //Img
 import September from "./assets/img/september.png";
 import PrRounded from "./assets/img/prRounded.png";
 import PrSquared from "./assets/img/prSquared.png";
+import ImgNews1 from "./assets/img/news1.png";
+import ImgNews2 from "./assets/img/news2.png";
 
 function App() {
   return (
@@ -15,6 +17,28 @@ function App() {
       <Nav />
       <Header />
       {/* <div className="spaceSection"></div> */}
+      <div className="spaceSection"></div>
+
+      <section className="firstNews cornerSpace">
+        <Article
+          imgSrc={ImgNews1}
+          imgAlt="News 1"
+          cardTitle="NEXT"
+          cardSubtitle="Lorem ipsum dolot sit amet lorem ipsum"
+          cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          bgColor="#fff"
+        />
+        <Article
+          imgSrc={ImgNews2}
+          imgAlt="News 1"
+          cardTitle="NEXT"
+          cardSubtitle="Lorem ipsum dolot sit amet lorem ipsum"
+          cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          bgColor="#E5E6E6"
+        />
+      </section>
+
+      <div className="spaceSection"></div>
 
       <section className="notes cornerSpace">
         <div className="notes__info">
@@ -57,7 +81,7 @@ function App() {
 
       <div className="spaceSection"></div>
       <section className="extraNews cornerSpace">
-        <LittleCard
+        <Article
           imgSrc={PrSquared}
           imgAlt="noAlt"
           cardTitle="Lorem ipsum dolot"
@@ -67,7 +91,7 @@ function App() {
           bgColor="#29ABE2"
         />
 
-        <LittleCard
+        <Article
           imgSrc={PrSquared}
           imgAlt="noAlt"
           cardTitle="Lorem ipsum dolot"
@@ -77,7 +101,7 @@ function App() {
           bgColor="#101820"
         />
 
-        <LittleCard
+        <Article
           imgSrc={PrSquared}
           imgAlt="noAlt"
           cardTitle="Lorem ipsum dolot"
@@ -87,7 +111,7 @@ function App() {
           bgColor="#101820"
         />
 
-        <LittleCard
+        <Article
           imgSrc={PrSquared}
           imgAlt="noAlt"
           cardTitle="Lorem ipsum dolot"
