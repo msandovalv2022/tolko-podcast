@@ -23,3 +23,35 @@
         }
     }
 }
+
+.littleCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    img{
+        height: 70px;
+        margin-right: 20px;
+    }
+    &__info{
+        h4{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px){
+    .littleCard{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 380px){
+    .littleCard{
+        padding: 8px;
+        &__info{
+            h4{
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

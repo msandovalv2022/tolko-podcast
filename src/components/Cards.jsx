@@ -42,4 +42,16 @@ const VidCard = ({ title, text, imgClass, titleClass, textClass }) => {
   );
 };
 
-export { ImgCard, VidCard };
+const LittleCard = ({ imgSrc, imgAlt, cardTitle, cardText, titleClass, textClass, bgColor, width }) => {
+  return (
+    <section className={"littleCard"} style={{backgroundColor: bgColor, width: width}}>
+      <img src={imgSrc} alt={imgAlt} />
+      <div className="littleCard__info">
+        <h4 className={titleClass}>{cardTitle}</h4>
+        <p className={textClass}>{cardText}</p>
+      </div>
+    </section>
+  );
+};
+
+export { ImgCard, VidCard, LittleCard };

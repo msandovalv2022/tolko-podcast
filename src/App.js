@@ -1,11 +1,12 @@
 //Components
 import Nav from "./components/Nav";
 import Header from "./components/Header";
-import { ImgCard, VidCard } from "./components/Cards";
+import { ImgCard, VidCard, LittleCard } from "./components/Cards";
 
 //Img
 import September from "./assets/img/september.png";
 import PrRounded from "./assets/img/prRounded.png";
+import PrSquared from "./assets/img/prSquared.png";
 
 function App() {
   return (
@@ -49,6 +50,17 @@ function App() {
             </div>
           </div>
         </div>
+      </section>
+
+      <div className="spaceSection"></div>
+      <section className="extraNews cornerSpace">
+        <LittleCard imgSrc={PrSquared} imgAlt="noAlt" cardTitle="Lorem ipsum dolot" cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"  titleClass="" textClass="" bgColor="#29ABE2"/>
+        
+        <LittleCard imgSrc={PrSquared} imgAlt="noAlt" cardTitle="Lorem ipsum dolot" cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"  titleClass="" textClass="" bgColor="#101820" />
+
+        <LittleCard imgSrc={PrSquared} imgAlt="noAlt" cardTitle="Lorem ipsum dolot" cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"  titleClass="" textClass="" bgColor="#101820" />
+        
+        <LittleCard imgSrc={PrSquared} imgAlt="noAlt" cardTitle="Lorem ipsum dolot" cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"  titleClass="" textClass="" bgColor="#29ABE2" />
       </section>
     </div>
   );
