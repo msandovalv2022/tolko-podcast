@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <Nav />
       <Header />
-      {/* <div className="spaceSection"></div> */}
-      <div className="spaceSection"></div>
+      <div className="spaceSection spaceSectionHeader1"></div>
+      <div className="spaceSection spaceSectionHeader2"></div>
 
       <section className="firstNews cornerSpace">
         <Article

@@ -7,6 +7,8 @@ const Header = () => {
       <div className="header__animation">
         <img src={Plane} alt="Avión" />
       </div>
+
+      <div className="header__mobile"></div>
     </section>
   );
 };

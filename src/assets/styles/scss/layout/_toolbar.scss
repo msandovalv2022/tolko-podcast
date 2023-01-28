@@ -34,7 +34,7 @@
 }
 @media screen and (max-width: 480px) {
   .toolbar{
-    padding: 50px;
+    padding: 25px;
     &__logo{
       img{
         height: 50px;
@@ -52,14 +52,19 @@
 }
 @media screen and (max-width: 380px) {
   .toolbar{
-    padding: 30px;
+    padding: 20px;
+    &__logo{
+      img{
+        height: 40px;
+      }
+    }
   }
 }
 @media screen and (max-width: 320px) {
   .toolbar{
     &__logo{
       img{
-        height: 40px;
+        height: 35px;
       }
     }
   }
