@@ -59,8 +59,8 @@ const Article = ({
     >
       <img src={imgSrc} alt={imgAlt} />
       <div className="littleCard__info">
-        <h4 className={titleClass}>{cardTitle}</h4>
-        <h5>{cardSubtitle}</h5>
+        <h2 className={titleClass}>{cardTitle}</h2>
+        <h3>{cardSubtitle}</h3>
         <p className={textClass}>{cardText}</p>
       </div>
     </section>
