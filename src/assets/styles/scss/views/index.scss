@@ -10,11 +10,11 @@
     }
     &__info {
       align-self: start;
-      h4 {
+      h2 {
         color: $blue;
         font-size: 3rem;
       }
-      h5{
+      h3 {
         margin-bottom: 10px;
       }
     }
@@ -54,16 +54,19 @@
   }
 }
 
+.notesResponsive {
+  display: none;
+}
+
 .extraNews {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   .littleCard {
-    &__info{
-      h2{
+    &__info {
+      h2 {
         font-size: 1.2rem;
-        margin-bottom: 10px;
       }
     }
     margin-bottom: 20px;
@@ -149,7 +152,7 @@
   .firstNews {
     .littleCard {
       flex-direction: column;
-      img{
+      img {
         width: 100%;
         object-fit: cover;
         margin-bottom: 15px;
@@ -157,26 +160,45 @@
     }
   }
   .notes {
+    display: none;
+  }
+  .notesResponsive {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &__info {
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      &--one {
-        margin-right: 0px;
+      margin-bottom: 40px;
+      h3,
+      p {
+        padding: 0 50px 0 50px;
       }
-      &--two {
-        translate: 0 -80px;
+      img {
+        width: 50%;
       }
+
     }
     &__videos {
-      translate: 0 -170px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &--rectangle {
+        width: 100%;
+        height: 50px;
+        background-color: $blue;
+        border-radius: 5px;
+      }
       &--videos {
-        flex-direction: column;
-        &One {
-          margin-right: 0px;
-        }
-        &Two {
-          translate: 0 -100px;
+        iframe {
+          margin-top: 40px;
+          margin-bottom: 10px;
+          height: 250px;
         }
       }
     }
@@ -184,34 +206,35 @@
 }
 
 @media screen and (max-width: 380px) {
-  .firstNews{
-    .littleCard{
-      img{
+  .firstNews {
+    .littleCard {
+      img {
         height: 150px;
         translate: 8px 0;
       }
     }
   }
-  .notes {
+  .notesResponsive {
     &__info {
-      &--two {
-        translate: 0 10px;
+      h3,
+      p {
+        padding: 0;
       }
     }
     &__videos {
-      translate: 0 -30px;
-      &--rectangle {
-        height: 50px;
-        border-radius: 5px;
+      &--videos {
+        iframe {
+          height: 200px;
+        }
       }
     }
   }
 }
-@media screen and (max-width: 320px){
-  .firstNews{
-    .littleCard{
+@media screen and (max-width: 320px) {
+  .firstNews {
+    .littleCard {
       border-radius: 5px;
-      img{
+      img {
         height: 120px;
       }
     }

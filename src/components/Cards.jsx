@@ -22,19 +22,19 @@ const ImgCard = ({
 
 const VidCard = ({ title, text, imgClass, titleClass, textClass }) => {
   return (
-    <section className="imgCard">
+    <section className="vidCard">
       <iframe
         width="100%"
         height="200px"
-        src="https://www.youtube.com/embed/W_yM7OkmHgM"
+        src="https://www.youtube.com/embed/TY4dKSADHdw"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <div className="imgCard__article">
+      <div className="vidCard__article">
         <h3 className={titleClass}>{title}</h3>
-        <div className="imgCard__article--text">
+        <div className="vidCard__article--text">
           <p className={textClass}>{text}</p>
         </div>
       </div>
