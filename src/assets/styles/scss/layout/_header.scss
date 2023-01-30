@@ -1,15 +1,45 @@
 .header {
+  width: 100%;
+  // max-width: 100%;
+  height: 160vh;
   &__animation {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../../../img/fullBanner.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
+    position: relative; /* Posicion relative para que los elemtos tomen como guía este contenedor */
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     img {
-      height: 150px;
-      display: none;
+      position: absolute;
+    }
+    &--slogan{
+      top: -50px;
+      height: 800px;
+    }
+    &--plane1,
+    &--plane2,
+    &--plane3,
+    &--plane4{
+      height: 160px;
+    }
+    &--plane1{
+      top: 120px;
+      translate: -900px 0;
+      transform: rotate(48deg);
+    }
+    &--plane2{
+      top: 250px;
+      translate: 900px 0;
+      transform: rotate(220deg);
+    }
+    &--plane3{
+      top: 450px;
+      translate: -900px 0;
+    }
+    &--plane4{
+      top: 120px;
+      translate: -900px 0;
+      transform: rotate(70deg);
     }
   }
   &__mobile {
