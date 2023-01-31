@@ -9,7 +9,16 @@ Con esto estamos diciendo a dónde va a ir el código cuando se despliegue
     -> "predeploy": "npm run build" : cuando gh pages lo empiece a subir se va a compilar todo nuestro proyecto en una carpeta llamada "build"
     -> "deploy": "gh-pages -d build" : Se le indica a gh-pages (previamente instalado) directorio donde está nuestro proyecto compilado
 
-    4. Se ejecuta nuestro script creado "npm run deploy"
+4. Se ejecuta nuestro script creado "npm run deploy"
     y con esto se ejecutará nuestros 2 scripts creados en orden: primero ejecuta "predeploy" y luego "deploy".
 
-    5. Si todo salió bien, la consola nos arroja el mensaje "Published" 
+5. Si todo salió bien, la consola nos arroja el mensaje "Published"
+
+6. Una vez el sitio publicado, al ir a GH a la sección de PAGES, veremos que indica que nuestro sitio está publicado en la web desde una rama llamada "gh-pages"
+
+7. Para actualizar todos nuestros cambios y mostrarlo en la web:
+    -> Hacemos el proceso normal de cuando se hacen los cambios: git add . > git commit -m "" > git push
+
+    -> Ejecutamos nuestro Script creado "npm run deploy".
+
+    -> Se sube a la web los cambios.
