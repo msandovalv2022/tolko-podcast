@@ -67,7 +67,9 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="header__mobile"></div>
+      <div className="header__mobile">
+        <img src={fullBanner} alt="Banner" />
+      </div>
     </section>
   );
 };
