@@ -8,3 +8,8 @@ Con esto estamos diciendo a dónde va a ir el código cuando se despliegue
 3. En le archivo package.json agregamos nuestros propios scripts:
     -> "predeploy": "npm run build" : cuando gh pages lo empiece a subir se va a compilar todo nuestro proyecto en una carpeta llamada "build"
     -> "deploy": "gh-pages -d build" : Se le indica a gh-pages (previamente instalado) directorio donde está nuestro proyecto compilado
+
+    4. Se ejecuta nuestro script creado "npm run deploy"
+    y con esto se ejecutará nuestros 2 scripts creados en orden: primero ejecuta "predeploy" y luego "deploy".
+
+    5. Si todo salió bien, la consola nos arroja el mensaje "Published" 
