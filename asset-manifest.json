@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/tolko-podcast/static/css/main.beba6eee.css",
+    "main.js": "/tolko-podcast/static/js/main.9798600b.js",
+    "static/js/787.45e84b7f.chunk.js": "/tolko-podcast/static/js/787.45e84b7f.chunk.js",
+    "static/media/fullBanner.png": "/tolko-podcast/static/media/fullBanner.2d54420feb07b0156d8c.png",
+    "static/media/news1.png": "/tolko-podcast/static/media/news1.d5eb52e1adfc2d0303e1.png",
+    "static/media/news2.png": "/tolko-podcast/static/media/news2.a0c758030bbbc7ea5699.png",
+    "static/media/prRounded.png": "/tolko-podcast/static/media/prRounded.d0dd243bad26599bc5e5.png",
+    "static/media/Adrianna-Regular.ttf": "/tolko-podcast/static/media/Adrianna-Regular.e187d129e2285acb1c8d.ttf",
+    "static/media/Adrianna-Bold.ttf": "/tolko-podcast/static/media/Adrianna-Bold.7f89d89da6ccdcfeb9f3.ttf",
+    "static/media/september.png": "/tolko-podcast/static/media/september.0e006be7749be86859fb.png",
+    "static/media/prSquared.png": "/tolko-podcast/static/media/prSquared.ad354c40df54ca13da9b.png",
+    "static/media/logo.png": "/tolko-podcast/static/media/logo.da68b625c969c31c7108.png",
+    "static/media/qr.png": "/tolko-podcast/static/media/qr.07ecae4e9c142a7b2004.png",
+    "static/media/logoWhite.png": "/tolko-podcast/static/media/logoWhite.f99dd913505085278bf2.png",
+    "index.html": "/tolko-podcast/index.html",
+    "main.beba6eee.css.map": "/tolko-podcast/static/css/main.beba6eee.css.map",
+    "main.9798600b.js.map": "/tolko-podcast/static/js/main.9798600b.js.map",
+    "787.45e84b7f.chunk.js.map": "/tolko-podcast/static/js/787.45e84b7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.beba6eee.css",
+    "static/js/main.9798600b.js"
+  ]
+}
