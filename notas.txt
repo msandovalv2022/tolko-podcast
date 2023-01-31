@@ -1,0 +1,10 @@
+APRENDIZAJE NUEVO:
+1. Se Desplega app de react en Github: una vez creado el repositorio, y el código subido, en consola ejecutmos el comando "npm i gh-pages".
+
+2. En el archivo package.json, antes de las dependencias agregamos la siguiente línea:
+    ->"homepage": "http://miusuariodegithub.github.io/nombre-del-proyecto"
+Con esto estamos diciendo a dónde va a ir el código cuando se despliegue
+
+3. En le archivo package.json agregamos nuestros propios scripts:
+    -> "predeploy": "npm run build" : cuando gh pages lo empiece a subir se va a compilar todo nuestro proyecto en una carpeta llamada "build"
+    -> "deploy": "gh-pages -d build" : Se le indica a gh-pages (previamente instalado) directorio donde está nuestro proyecto compilado
