@@ -12,34 +12,39 @@
     img {
       position: absolute;
     }
-    &--slogan{
+    &--slogan {
       top: -50px;
       height: 800px;
     }
-    &--plane1,
-    &--plane2,
-    &--plane3,
-    &--plane4{
-      height: 160px;
-    }
-    &--plane1{
-      top: 120px;
-      translate: -900px 0;
-      transform: rotate(48deg);
-    }
-    &--plane2{
-      top: 250px;
-      translate: 900px 0;
-      transform: rotate(220deg);
-    }
-    &--plane3{
-      top: 450px;
-      translate: -900px 0;
-    }
-    &--plane4{
-      top: 120px;
-      translate: -900px 0;
-      transform: rotate(70deg);
+    &--subanimation {
+      height: 0px;
+      position: absolute;
+      top: 0;
+      &--plane1,
+      &--plane2,
+      &--plane3,
+      &--plane4 {
+        height: 160px;
+      }
+      &--plane1 {
+        top: 120px;
+        translate: -900px 0;
+        transform: rotate(48deg);
+      }
+      &--plane2 {
+        top: 250px;
+        translate: 900px 0;
+        transform: rotate(220deg);
+      }
+      &--plane3 {
+        top: 450px;
+        translate: -1000px 0;
+      }
+      &--plane4 {
+        top: 120px;
+        translate: -1000px 0;
+        transform: rotate(70deg);
+      }
     }
   }
   &__mobile {
@@ -93,17 +98,17 @@
 }
 
 @media screen and (max-width: 380px) {
-    .header{
-        &__mobile{
-            height: 330px;
-        }
+  .header {
+    &__mobile {
+      height: 330px;
     }
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .header{
-        &__mobile{
-            height: 290px;
-        }
+  .header {
+    &__mobile {
+      height: 290px;
     }
+  }
 }
