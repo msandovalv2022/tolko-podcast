@@ -2,6 +2,7 @@
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import { Article, ImgCard, VidCard } from "./components/Cards";
+import Audioplayer from "./components/Audioplayer";
 import Footer from "./components/Footer";
 
 //Img
@@ -163,7 +164,7 @@ function App() {
       </section>
 
       <div className="spaceSection"></div>
-
+      <Audioplayer />
       <Footer />
     </div>
   );
