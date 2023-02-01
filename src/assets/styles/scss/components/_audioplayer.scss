@@ -1,71 +1,57 @@
 .audioplayer {
+  // height: 130px;
+  // overflow-y: hidden;
+  background-color: $extraLightgrey;
   width: 100%;
-  background-color: red;
   display: flex;
-  justify-content:space-around;
+  justify-content: center;
   align-items: center;
   &__img {
-    align-self: center;
-    justify-self: center;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
-      height: 100px;
+      height: 140px;
+      border-radius: 10px;
     }
   }
   &__player {
-    width: 80%;
-    ._oGACf {
-      ._1EWMa {
-        display: grid;
-        // grid-template-columns: 20% 60% 20%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        align-items: center;
-        justify-items: center;
-        ._2_1sf {
-          //Controles
-          grid-column: 1/2;
-          grid-row: 2/3;
-          align-self: center;
-          ._2FsrM {
-            //botones
-            img {
-              margin-right: 10px;
-              width: 30px;
-              height: 30px;
+    width: 100%;
+    ._oGACf { 
+      ._1EWMa{
+        //player
+        ._wKo5X{ // title / time
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          h1{
+            font-size: 1.2rem;
+            color: $black;
+          }
+        }
+        ._2_1sf{ // Audio Controls
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          ._2FsrM{ //Btns
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            img{
+              height: 25px;
+              width: 25px;
             }
-            ._3CCfI {
-              //btn repeat song
+            ._3CCfI{ //Btn repeat
               display: none;
             }
-            ._8c4KL {
-              //Mix songs
-              display: none;
+            ._8c4KL{ //Btn mix
+              display: none ;
             }
           }
-          ._1cpXy {
-            //volumen
+          ._1cpXy{ //Volume
             display: none;
           }
-        }
-        ._2cSIF {
-          //Timeline
-          grid-column: 2/3;
-          grid-row: 2/3;
-          align-self: center;
-        }
-        ._wKo5X {
-          //Título y duración
-          grid-column: 1/3;
-          grid-row: 1/2;
-          align-self: center;
-          translate: -50px 0;
-          h1 {
-            font-size: 16px;
-          }
-          //   ._3q4Ah {
-          //     //T´titulo de la canción
-          //     display: none;
-          //   }
         }
       }
       ._RZMQZ {
@@ -74,3 +60,79 @@
     }
   }
 }
+// .audioplayer {
+//   width: 100%;
+//   background-color: red;
+//   display: flex;
+//   justify-content:space-around;
+//   align-items: center;
+//   &__img {
+//     align-self: center;
+//     justify-self: center;
+//     img {
+//       height: 100px;
+//     }
+//   }
+//   &__player {
+//     width: 80%;
+//     ._oGACf {
+//       ._1EWMa {
+//         display: grid;
+//         // grid-template-columns: 20% 60% 20%;
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-template-rows: repeat(2, 1fr);
+//         align-items: center;
+//         justify-items: center;
+//         ._2_1sf {
+//           //Controles
+//           grid-column: 1/2;
+//           grid-row: 2/3;
+//           align-self: center;
+//           ._2FsrM {
+//             //botones
+//             img {
+//               margin-right: 10px;
+//               width: 30px;
+//               height: 30px;
+//             }
+//             ._3CCfI {
+//               //btn repeat song
+//               display: none;
+//             }
+//             ._8c4KL {
+//               //Mix songs
+//               display: none;
+//             }
+//           }
+//           ._1cpXy {
+//             //volumen
+//             display: none;
+//           }
+//         }
+//         ._2cSIF {
+//           //Timeline
+//           grid-column: 2/3;
+//           grid-row: 2/3;
+//           align-self: center;
+//         }
+//         ._wKo5X {
+//           //Título y duración
+//           grid-column: 1/3;
+//           grid-row: 1/2;
+//           align-self: center;
+//           translate: -50px 0;
+//           h1 {
+//             font-size: 16px;
+//           }
+//           //   ._3q4Ah {
+//           //     //T´titulo de la canción
+//           //     display: none;
+//           //   }
+//         }
+//       }
+//       ._RZMQZ {
+//         display: none;
+//       }
+//     }
+//   }
+// }
