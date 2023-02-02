@@ -18,38 +18,44 @@
   }
   &__player {
     width: 100%;
-    ._oGACf { 
-      ._1EWMa{
+    ._oGACf {
+      ._1EWMa {
         //player
-        ._wKo5X{ // title / time
+        ._wKo5X {
+          // title / time
           display: flex;
-          justify-content: space-around;
+          justify-content: space-evenly;
           align-items: center;
-          h1{
+          h1 {
             font-size: 1.2rem;
             color: $black;
           }
         }
-        ._2_1sf{ // Audio Controls
+        ._2_1sf {
+          // Audio Controls
           display: flex;
           justify-content: center;
           align-items: center;
-          ._2FsrM{ //Btns
+          ._2FsrM {
+            //Btns
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            img{
+            img {
               height: 25px;
               width: 25px;
             }
-            ._3CCfI{ //Btn repeat
+            ._3CCfI {
+              //Btn repeat
               display: none;
             }
-            ._8c4KL{ //Btn mix
-              display: none ;
+            ._8c4KL {
+              //Btn mix
+              display: none;
             }
           }
-          ._1cpXy{ //Volume
+          ._1cpXy {
+            //Volume
             display: none;
           }
         }
@@ -60,6 +66,79 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .audioplayer {
+    height: 110px;
+    overflow-y: hidden;
+  }
+}
+@media screen and (max-width: 668px) {
+  .audioplayer {
+    &__img {
+      translate: 20px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .audioplayer {
+    flex-direction: column;
+    height: 380px;
+    background-color: $white;
+    &__img {
+      translate: 0 0;
+      img {
+        height: 200px;
+      }
+    }
+    &__player {
+      ._oGACf {
+        ._1EWMa {
+          ._wKo5X {
+            flex-direction: column;
+            // translate: 0 20px;
+            ._tAQkw {
+              text-align: center;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .audioplayer {
+    &__player {
+      ._oGACf {
+        ._1EWMa {
+          ._wKo5X {
+            h1 {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .audioplayer {
+    &__player {
+      ._oGACf {
+        ._1EWMa {
+          ._wKo5X {
+            h1 {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // .audioplayer {
 //   width: 100%;
 //   background-color: red;

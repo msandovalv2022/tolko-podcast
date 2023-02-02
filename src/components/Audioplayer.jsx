@@ -62,7 +62,7 @@ const Audioplayer = () => {
           includeTags={false}
           includeSearch={false}
           showPlaylist={true}
-          autoPlayNextTrack={false}
+          autoPlayNextTrack={true}
           customColorScheme={colors}
         />
       </div>
