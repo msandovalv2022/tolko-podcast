@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tolko-podcast/static/css/main.5edb7312.css",
+    "main.css": "/tolko-podcast/static/css/main.acf2e306.css",
     "main.js": "/tolko-podcast/static/js/main.1a84f407.js",
     "static/js/787.45e84b7f.chunk.js": "/tolko-podcast/static/js/787.45e84b7f.chunk.js",
     "static/media/where.mp3": "/tolko-podcast/static/media/where.812d69a807dd5492e589.mp3",
@@ -18,12 +18,12 @@
     "static/media/qr.png": "/tolko-podcast/static/media/qr.07ecae4e9c142a7b2004.png",
     "static/media/logoWhite.png": "/tolko-podcast/static/media/logoWhite.f99dd913505085278bf2.png",
     "index.html": "/tolko-podcast/index.html",
-    "main.5edb7312.css.map": "/tolko-podcast/static/css/main.5edb7312.css.map",
+    "main.acf2e306.css.map": "/tolko-podcast/static/css/main.acf2e306.css.map",
     "main.1a84f407.js.map": "/tolko-podcast/static/js/main.1a84f407.js.map",
     "787.45e84b7f.chunk.js.map": "/tolko-podcast/static/js/787.45e84b7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5edb7312.css",
+    "static/css/main.acf2e306.css",
     "static/js/main.1a84f407.js"
   ]
 }
